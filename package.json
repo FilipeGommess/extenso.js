@@ -1,6 +1,6 @@
 {
-  "name": "extenso",
-  "version": "2.1.0",
+  "name": "@filipegommess/extenso",
+  "version": "2.1.1",
   "description": "Uma biblioteca avançada para escrever números por extenso (em português).",
   "main": "dist/extenso.esm.js",
   "types": "index.d.ts",
