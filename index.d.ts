@@ -1,4 +1,4 @@
-declare module 'extenso' {
+declare module '@filipegommess/extenso' {
   /**
    * An advanced library for writing numbers in words (in Portuguese).
    * @param number The number to convert to written text
