@@ -2,23 +2,20 @@
   "name": "@filipegommess/extenso",
   "version": "2.1.1",
   "description": "Uma biblioteca avançada para escrever números por extenso (em português).",
-  "main": "dist/extenso.esm.js",
+  "main": "dist/extenso.cjs.js",
+  "module": "dist/extenso.esm.js",
   "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/extenso.cjs.js",
+      "import": "./dist/extenso.esm.js",
+      "types": "./index.d.ts"
+    }
+  },
   "files": [
     "dist",
     "index.d.ts"
   ],
-  "ava": {
-    "files": [
-      "src/**/*.test.ts"
-    ],
-    "typescript": {
-      "rewritePaths": {
-        "src/": "build/src/"
-      },
-      "compile": "tsc"
-    }
-  },
   "scripts": {
     "test": "rm -rf build && ava --colors",
     "test:coverage": "rm -rf build && c8 --check-coverage --100 ava --colors",
